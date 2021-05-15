@@ -7,7 +7,7 @@ services:
     cap_drop: [all]
     cap_add: [chown, setgid, setuid, kill]
     volumes:
-      - ./service/src:/var/www/service/src
+      - ./:/var/www
     networks:
       - backend
     restart: unless-stopped
