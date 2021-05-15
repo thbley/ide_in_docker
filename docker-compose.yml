@@ -37,6 +37,7 @@ services:
       - ./docker/code-server/settings.json:/config/.local/share/code-server/User/settings.json
       - ./docker/code-server/tasks.json:/config/.local/share/code-server/User/tasks.json
       - ./docker/code-server/keybindings.json:/config/.local/share/code-server/User/keybindings.json
+      - ./docker/code-server/launch.json:/var/www/.vscode/launch.json
     ports:
       - "127.0.0.1:8000:8000"
     networks:

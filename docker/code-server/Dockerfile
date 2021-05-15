@@ -27,7 +27,8 @@ ADD getpsalm.psalm-vscode-plugin-1.2.2.vsix /tmp/
 
 RUN composer global require --no-suggest --no-progress --no-cache vimeo/psalm friendsofphp/php-cs-fixer
 
-RUN code-server --install-extension fterrag.vscode-php-cs-fixer \
+RUN code-server --install-extension felixfbecker.php-debug \
+                --install-extension fterrag.vscode-php-cs-fixer \
                 --install-extension alphabotsec.vscode-eclipse-keybindings \
                 --install-extension /tmp/getpsalm.psalm-vscode-plugin-1.2.2.vsix \
     && chmod -R a+w /config

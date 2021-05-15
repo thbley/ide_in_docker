@@ -2,4 +2,6 @@
 
 namespace Service;
 
-echo 'Hello IPC 2021!';
+$message = 'Hello IPC 2021!';
+
+echo $message;
