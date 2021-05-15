@@ -28,7 +28,6 @@ services:
     build:
       context: ./docker/code-server
       args: [UID]
-    image: docker_ide_codeserver
     cap_drop: [all]
     userns_mode: "host"
     volumes:

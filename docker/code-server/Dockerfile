@@ -23,9 +23,9 @@ USER docker
 ENV SERVICE_URL=https://open-vsx.org/vscode/gallery
 ENV ITEM_URL=https://open-vsx.org/vscode/item
 
-ADD getpsalm.psalm-vscode-plugin-1.2.2.vsix /tmp/
-
 RUN composer global require --no-suggest --no-progress --no-cache vimeo/psalm friendsofphp/php-cs-fixer
+
+ADD getpsalm.psalm-vscode-plugin-1.2.2.vsix /tmp/
 
 RUN code-server --install-extension felixfbecker.php-debug \
                 --install-extension fterrag.vscode-php-cs-fixer \
