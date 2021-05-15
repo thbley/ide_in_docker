@@ -1,5 +1,5 @@
 {
-    "terminal.integrated.defaultProfile.linux": "/bin/bash",
+    "files.autoSave": "off",
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": false,
     "editor.folding": false,
@@ -30,6 +30,7 @@
         ".project": true,
         ".settings": true
     },
+    "terminal.integrated.defaultProfile.linux": "/bin/bash",
     "vscode-php-cs-fixer.toolPath": "/var/www/bin/phpcsfixer-3000.phar",
     "vscode-php-cs-fixer.config": "/var/www/phpcsfixer.conf",
     "vscode-php-cs-fixer.fixOnSave": false,
