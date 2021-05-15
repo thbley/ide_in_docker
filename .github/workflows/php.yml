@@ -1,0 +1,24 @@
+name: build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Build php container
+      run: docker-compose build php
+
+    - name: Run composer
+      run: docker-compose -f docker-compose.yml -f docker-compose-tasks.yml run -u $(id -u) --rm composer
+
+    - name: Run phpcsfixer
+      run: docker-compose -f docker-compose.yml -f docker-compose-tasks.yml run -u $(id -u) --rm phpcsfixer
+      
+    - name: Run psalm
+      run: docker-compose -f docker-compose.yml -f docker-compose-tasks.yml run -u $(id -u) --rm psalm
+
+    - name: Run phpunit
+      run: docker-compose -f docker-compose.yml -f docker-compose-tasks.yml run -u $(id -u) --rm phpunit

@@ -1,0 +1,5 @@
+.*
+!.github
+!.gitignore
+docker-compose.override.yml
+service/src/vendor/

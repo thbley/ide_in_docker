@@ -1,0 +1,49 @@
+{
+    // See https://code.visualstudio.com/docs/editor/tasks#vscode
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "phpcsfixer",
+            "type": "shell",
+            "problemMatcher": [],
+            "command": "/config/.composer/vendor/bin/php-cs-fixer fix --verbose --dry-run --diff --config phpcsfixer.conf",
+            "options": {
+                "cwd": "/var/www/service"
+            },
+            "presentation": {
+                "showReuseMessage": false,
+                "echo": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "psalm",
+            "type": "shell",
+            "problemMatcher": [],
+            "command": "/config/.composer/vendor/bin/psalm --no-cache",
+            "options": {
+                "cwd": "/var/www/service"
+            },
+            "presentation": {
+                "showReuseMessage": false,
+                "echo": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "phpunit",
+            "type": "shell",
+            "problemMatcher": [],
+            "command": "phpunit-954.phar",
+            "options": {
+                "cwd": "/var/www/service"
+            },
+            "presentation": {
+                "showReuseMessage": false,
+                "echo": false,
+                "clear": true
+            }
+        }
+    ]
+}
