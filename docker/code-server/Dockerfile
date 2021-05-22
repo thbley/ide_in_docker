@@ -7,9 +7,9 @@ RUN apt-get -y update \
     && apt-get -y update \
     && DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install git php8.0-cli \
         php8.0-mbstring php8.0-curl php8.0-xml php8.0-zip \
-    && curl -#L -o /tmp/code-server.deb https://github.com/cdr/code-server/releases/download/v3.10.1/code-server_3.10.1_amd64.deb \
+    && curl -#L -o /tmp/code-server.deb https://github.com/cdr/code-server/releases/download/v3.10.2/code-server_3.10.2_amd64.deb \
     && dpkg -i /tmp/code-server.deb \
-    && curl -#L -o /usr/bin/composer https://getcomposer.org/download/2.0.13/composer.phar \
+    && curl -#L -o /usr/bin/composer https://getcomposer.org/download/latest-stable/composer.phar \
     && chmod +x /usr/bin/composer \
     && apt-get upgrade -y \
     && apt-get clean \
