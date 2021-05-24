@@ -20,7 +20,6 @@
 
     <issueHandlers>
         <PropertyNotSetInConstructor errorLevel="suppress" />
-        <InternalMethod errorLevel="suppress" />
         
         <UnusedClass errorLevel="info">
             <errorLevel type="suppress">
