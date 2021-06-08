@@ -35,5 +35,6 @@
     "vscode-php-cs-fixer.fixOnSave": false,
     "psalm.psalmScriptPath": "/config/.composer/vendor/bin/psalm-language-server",
     "psalm.hideStatusMessageWhenRunning": true,
-    "psalm.unusedVariableDetection": true
+    "psalm.unusedVariableDetection": true,
+    "hediet.vscode-drawio.theme": "Kennedy"
 }
