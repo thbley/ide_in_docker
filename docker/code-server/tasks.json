@@ -35,7 +35,7 @@
             "label": "phpunit",
             "type": "shell",
             "problemMatcher": [],
-            "command": "phpunit-954.phar",
+            "command": "phpunit-9510.phar",
             "options": {
                 "cwd": "/var/www/service"
             },
