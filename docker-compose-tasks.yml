@@ -1,12 +1,13 @@
-version: "2.1"
+version: "2.4"
 
 services:
   composer:
     image: docker_ide_php
     cap_drop: [all]
     working_dir: /var/www
-    entrypoint: composer-214.phar
+    entrypoint: composer-218.phar
     command: install --no-cache --no-progress -o -a --ignore-platform-reqs
+    userns_mode: "host"
     volumes:
       - ./service/:/var/www
       - ./bin:/usr/local/sbin

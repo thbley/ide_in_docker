@@ -49,7 +49,7 @@
             "label": "composer",
             "type": "shell",
             "problemMatcher": [],
-            "command": "composer-214.phar install --no-cache -o -a --ignore-platform-reqs",
+            "command": "composer-218.phar install --no-cache -o -a --ignore-platform-reqs",
             "options": {
                 "cwd": "/var/www/service"
             },
