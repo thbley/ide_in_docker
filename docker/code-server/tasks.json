@@ -7,7 +7,7 @@
             "label": "phpcsfixer",
             "type": "shell",
             "problemMatcher": [],
-            "command": "/config/.composer/vendor/bin/php-cs-fixer fix --verbose --dry-run --diff --config phpcsfixer.conf",
+            "command": "phpcsfixer-3100.phar fix --verbose --dry-run --diff --config phpcsfixer.conf",
             "options": {
                 "cwd": "/var/www/service"
             },
@@ -21,7 +21,7 @@
             "label": "psalm",
             "type": "shell",
             "problemMatcher": [],
-            "command": "/config/.composer/vendor/bin/psalm --no-cache",
+            "command": "psalm-4100.phar --no-cache",
             "options": {
                 "cwd": "/var/www/service"
             },
@@ -36,6 +36,20 @@
             "type": "shell",
             "problemMatcher": [],
             "command": "phpunit-9510.phar",
+            "options": {
+                "cwd": "/var/www/service"
+            },
+            "presentation": {
+                "showReuseMessage": false,
+                "echo": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "composer",
+            "type": "shell",
+            "problemMatcher": [],
+            "command": "composer-214.phar install --no-cache -o -a --ignore-platform-reqs",
             "options": {
                 "cwd": "/var/www/service"
             },
