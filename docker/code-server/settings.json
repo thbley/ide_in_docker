@@ -5,19 +5,19 @@
     "editor.renderLineHighlight": "line",
     "editor.fontSize": 13,
     "workbench.colorTheme": "Default Dark+",
-    "workbench.colorCustomizations": {
-        "editor.lineHighlightBackground": "#37373d"
-    },
+    "workbench.colorCustomizations": { "editor.lineHighlightBackground": "#37373d" },
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "none",
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.enableExperiments": false,
+    "workbench.tree.indent": 20,
     "update.showReleaseNotes": false,
     "update.mode": "none",
     "explorer.openEditors.visible": 0,
     "breadcrumbs.enabled": false,
     "extensions.autoUpdate": false,
     "extensions.autoCheckUpdates": false,
+    "telemetry.enableTelemetry": false,
     "php.suggest.basic": false,
     "git.enabled": true,
     "[php]": { "editor.defaultFormatter": "fterrag.vscode-php-cs-fixer" },
@@ -27,14 +27,18 @@
         ".gitignore": true,
         ".local": true,
         ".project": true,
-        ".settings": true
+        ".settings": true,
+        ".~lock*": true
     },
-    "terminal.integrated.defaultProfile.linux": "/bin/bash",
-    "vscode-php-cs-fixer.toolPath": "/config/.composer/vendor/bin/php-cs-fixer",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "vscode-php-cs-fixer.toolPath": "/var/www/src_micro/bin/phpcsfixer_3100.phar",
     "vscode-php-cs-fixer.config": "/var/www/phpcsfixer.conf",
     "vscode-php-cs-fixer.fixOnSave": false,
-    "psalm.psalmScriptPath": "/config/.composer/vendor/bin/psalm-language-server",
-    "psalm.hideStatusMessageWhenRunning": true,
+    "psalm.psalmScriptPath": "/var/www/src_micro/bin/psalm_4100.phar",
     "psalm.unusedVariableDetection": true,
-    "hediet.vscode-drawio.theme": "Kennedy"
+    "psalm.hideStatusMessageWhenRunning": true,
+    "psalm.enableUseIniDefaults": true,
+    "psalm.phpExecutableArgs": [ "-derror_log=/tmp/psalm.log", "-ddisable_functions=''" ],
+    "hediet.vscode-drawio.theme": "Kennedy",
+    "window.title": "${activeEditorMedium}"
 }
