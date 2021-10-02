@@ -31,10 +31,10 @@
         ".~lock*": true
     },
     "terminal.integrated.defaultProfile.linux": "bash",
-    "vscode-php-cs-fixer.toolPath": "/var/www/src_micro/bin/phpcsfixer_3100.phar",
+    "vscode-php-cs-fixer.toolPath": "/var/www/src_micro/bin/phpcsfixer-3100.phar",
     "vscode-php-cs-fixer.config": "/var/www/phpcsfixer.conf",
     "vscode-php-cs-fixer.fixOnSave": false,
-    "psalm.psalmScriptPath": "/var/www/src_micro/bin/psalm_4100.phar",
+    "psalm.psalmScriptPath": "/var/www/src_micro/bin/psalm-4100.phar",
     "psalm.unusedVariableDetection": true,
     "psalm.hideStatusMessageWhenRunning": true,
     "psalm.enableUseIniDefaults": true,
