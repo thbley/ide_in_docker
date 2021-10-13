@@ -9,7 +9,7 @@ RUN apt-get -y update \
     && apt-get -y update \
     && DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install git php8.0-cli \
         php8.0-mbstring php8.0-curl php8.0-xml php8.0-zip \
-    && curl -#L -o /tmp/code-server.deb https://github.com/cdr/code-server/releases/download/v3.12.0/code-server_3.12.0_amd64.deb \
+    && curl -#L -o /tmp/code-server.deb https://github.com/cdr/code-server/releases/download/v3.11.1/code-server_3.11.1_amd64.deb \
     && dpkg -i /tmp/code-server.deb \
     && apt-get upgrade -y \
     && apt-get clean \
