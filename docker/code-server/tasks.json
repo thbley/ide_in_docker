@@ -7,7 +7,7 @@
             "label": "phpcsfixer",
             "type": "shell",
             "problemMatcher": [],
-            "command": "phpcsfixer-3100.phar fix --verbose --dry-run --diff --config phpcsfixer.conf",
+            "command": "phpcsfixer-3210.phar fix --verbose --dry-run --diff --config phpcsfixer.conf",
             "options": {
                 "cwd": "/var/www/service"
             },
