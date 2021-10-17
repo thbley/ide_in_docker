@@ -5,6 +5,7 @@
     "editor.renderLineHighlight": "line",
     "editor.fontSize": 13,
     "editor.rulers": [120],
+    "editor.suggest.preview": true,
     "workbench.colorTheme": "Default Dark+",
     "workbench.colorCustomizations": { "editor.lineHighlightBackground": "#37373d" },
     "workbench.editor.enablePreview": false,
